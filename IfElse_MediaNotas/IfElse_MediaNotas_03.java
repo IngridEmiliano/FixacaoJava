@@ -21,5 +21,6 @@ public class IfElse_MediaNotas_03 {
         double menorNota = Math.min(nota1, Math.max(nota2, nota3));
         System.out.println("A menor nota é: " + menorNota);
 }
+    sc.close();
 
     }
