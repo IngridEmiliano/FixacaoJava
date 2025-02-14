@@ -20,10 +20,12 @@ public class IfElse_Categorias01 {
             System.out.println("Adulto");
         } else if (idade >= 60) {
             System.out.println("Idoso");
-        }
+        }  else {
+                System.out.println("Erro");
         sc.close();
 
     }
+}
 }
 
 
