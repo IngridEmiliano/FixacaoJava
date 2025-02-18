@@ -1,4 +1,4 @@
-package Metodos;
+package Orientaçao_a_objetos;
 import java.util.Scanner;
 
 public class MaiorValorEntreTres_Program {
