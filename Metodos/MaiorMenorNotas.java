@@ -6,18 +6,17 @@ public class MaiorMenorNotas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Leitura das notas
+    
         System.out.print("Digite a primeira nota: ");
         double nota1 = sc.nextDouble();
         System.out.print("Digite a segunda nota: ");
         double nota2 = sc.nextDouble();
         System.out.print("Digite a terceira nota: ");
         double nota3 = sc.nextDouble();
-
-        // Criando o objeto Notas
+        
         Notas notas = new Notas(nota1, nota2, nota3);
 
-        // Calculando a maior e menor nota
+     
         double maiorNota = notas.calcularMaiorNota();
         double menorNota = notas.calcularMenorNota();
 
@@ -28,33 +27,35 @@ public class MaiorMenorNotas {
         sc.close();
     }
 
-    // Classe para armazenar as notas e calcular maior e menor
     public static class Notas {
-        private double[] notas; // Usando um array para armazenar as notas
+        private double nota1, nota2, nota3;
 
-        // Construtor para inicializar as notas
         public Notas(double nota1, double nota2, double nota3) {
-            this.notas = new double[]{nota1, nota2, nota3};
+            this.nota1 = nota1;
+            this.nota2 = nota2;
+            this.nota3 = nota3;
         }
 
-        // Metodo para calcular a maior nota
+        // Método para calcular a maior nota
         public double calcularMaiorNota() {
-            double maiorNota = notas[0]; // Inicializa com a primeira nota
-            for (double nota : notas) {
-                if (nota > maiorNota) {
-                    maiorNota = nota;
-                }
+            double maiorNota = nota1;
+            if (nota2 > maiorNota) {
+                maiorNota = nota2;
+            }
+            if (nota3 > maiorNota) {
+                maiorNota = nota3;
             }
             return maiorNota;
         }
 
-        // Metodo para calcular a menor nota
+        // Método para calcular a menor nota
         public double calcularMenorNota() {
-            double menorNota = notas[0]; // Inicializa com a primeira nota
-            for (double nota : notas) {
-                if (nota < menorNota) {
-                    menorNota = nota;
-                }
+            double menorNota = nota1;
+            if (nota2 < menorNota) {
+                menorNota = nota2;
+            }
+            if (nota3 < menorNota) {
+                menorNota = nota3;
             }
             return menorNota;
         }
