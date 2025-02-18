@@ -1,4 +1,4 @@
-package Metodos;
+package Orientaçao_a_objetos;
 
 public class MaiorValorEntreTres_Calculo {
     public int a;
