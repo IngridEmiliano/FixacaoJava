@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.atividadeb.atividadeb.AtividadeB_Controller">
+   <children>
+      <Pane prefHeight="230.0" prefWidth="378.0">
+         <children>
+            <Button fx:id="Verificar" layoutX="150.0" layoutY="130.0" mnemonicParsing="false" onAction="#alerta" text="Verificar" textAlignment="CENTER" />
+            <TextField fx:id="num1" layoutX="109.0" layoutY="74.0" prefHeight="25.0" prefWidth="143.0" />
+            <Label fx:id="texto" layoutX="60.0" layoutY="171.0" prefHeight="17.0" prefWidth="242.0" text="" textAlignment="CENTER" />
+            <Label fx:id="Titulo" layoutX="129.0" layoutY="30.0" text="Par ou Impar" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ativc.atvc.AtivCController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="29.0" layoutY="14.0" text="Contador de caracteres" textFill="#bc0c0c">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Caractere" layoutX="40.0" layoutY="60.0" prefHeight="25.0" prefWidth="120.0" />
+            <Button fx:id="Contar" layoutX="74.0" layoutY="107.0" mnemonicParsing="false" onAction="#Alerta" text="Contar" textFill="#bc0c0c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="Resultado" layoutX="13.0" layoutY="148.0" prefHeight="20.0" prefWidth="175.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>
